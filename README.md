@@ -11,6 +11,8 @@ This web app uses the essential concepts for React App with TypeScript:
 
 ## The tech stack
 
+This React App with TypeScript is built with Vite build tool.
+
 Vite - a build tool to provide a faster and leaner development experience for modern web projects.
 Node.js - runtime environment that executes JavaScript on the server side.
 CSS - Cascading Style Sheets
@@ -40,32 +42,13 @@ src
         └── CourseGoal.tsx     # Application logic - maintainable React components
   └── index.css                # Styles and layout of the application
   └── main.tsx                 # Templates for the app user interface
-  └── vite-env.d.ts            # Sample data for tests
+  └── vite-env.d.ts            # Vite build tool environment - vite build tools
 index.html                     # Overall content of the application
 package.json                   # Project dependencies
-public                         # Directory for static files
+public                         # Directory for static files such as logo files
   └── goals.jpg                # Project logo file
-README.md                      # Project README
+README.md                      # Project README file
 tsconfig.json                  # Configure the TS compiler
-tsconfig.node.json             # Express server
+tsconfig.node.json             # Configure the TS Node compiler
 vite.config.ts                 # Vite tool configurations to convert code to JavaScript syntax
 ```
-
-## Dependencies
-
-| Package                                                                  | Description                                       |
-| ------------------------------------------------------------------------ | ------------------------------------------------- |
-| [applicationinsights](https://www.npmjs.com/package/applicationinsights) | Microsoft Application Insights module for Node.js |
-| [dotenv](https://www.npmjs.com/package/dotenv)                           | Loads environment variables from .env file        |
-| [get-stream](https://www.npmjs.com/package/get-stream)                   | Get a stream as a string, buffer, or array        |
-| [path](https://www.npmjs.com/package/path)                               | Node.JS path module                               |
-
-## Development dependencies
-
-| Package                                                  | Description                                                          |
-| -------------------------------------------------------- | -------------------------------------------------------------------- |
-| [chai](https://www.npmjs.com/package/chai)               | BDD/TDD assertion library for Node.js and the browser                |
-| [chai-http](https://www.npmjs.com/package/chai-http)     | Extend Chai assertion library with tests for HTTP APIs               |
-| [mocha](https://www.npmjs.com/package/mocha)             | Mocha is a feature-rich JavaScript test framework running on Node.js |
-| [mochawesome](https://www.npmjs.com/package/mochawesome) | Generate HTML/CSS reports to visualize test results                  |
-| [nodemon](https://www.npmjs.com/package/nodemon)         | Simple monitor script for use during development of a node.js app.   |
