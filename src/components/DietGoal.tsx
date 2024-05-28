@@ -1,6 +1,6 @@
 /* Define the type for React`props` parameter.
 Connect - up from the `title` and `description` from the return statement to the props parameters.
-This is our object type which is of string. */
+Line 8 and 9: setting our own object type. We control whcih data we expect to get there.  */
 export default function DietGoal({
   title,
   description,
