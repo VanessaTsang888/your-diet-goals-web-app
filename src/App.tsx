@@ -2,7 +2,8 @@ import DietGoal from './components/DietGoal.tsx';
 import Header from './components/Header.tsx';
 import goalsImg from './assets/goals.jpg';
 
-// JSX Code: the paragraph element is the children and we define the type for it in the DietGoal.tsx component file.
+// JSX syntax: the paragraph element is the children and we define
+// the type for it in the DietGoal.tsx component file.
 export default function App() {
   return (
     <main>
