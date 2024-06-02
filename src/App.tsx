@@ -31,17 +31,19 @@ export default function App() {
     });
   }
 
-  {
-    /* DietGoalList component, with `goals` prop, set to that `goals` value which refers 
-    to our state (useState hook) that we are managing in this component. */
+  // Func to delete a goal from our list which is in the DietGoalList component.
+  // If id in parameter is equal to id, condition will be false and goal will be dropped.
+  function handleDeleteGoal(id: number) {
+    setGoals((prevGoals) => prevGoals.filter((goal) => goal.id !== id));
   }
+
   return (
     <main>
       <Header image={{ src: goalsImg, alt: 'A list of goals' }}>
         <h1>Your Diet Goals</h1>
       </Header>
       <button onClick={handleAddGoal}>Add Goal</button>
-      <DietGoalList goals={goals} />
+      <DietGoalList goals={goals} onDeleteGoal={handleDeleteGoal} />
     </main>
   );
 }
