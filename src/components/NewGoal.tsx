@@ -1,29 +1,30 @@
-import { type FormEvent } from 'react';
-// This functional form component should return a form (built-in form element).
-// Basic form with two input elements. Each input is connected by a label element.
-// Logic to handle the form submission: nested func `handleDubmit()`.
-// Connect this nested func to `onSubmit` prop in form element as we want to use it as a value for this prop.
+import { useRef, type FormEvent } from 'react';
 // Set `FormEvent` type on the event object param that is provided by React for type safety.
-
 export default function NewGoal() {
+  // Once these Refs are created we connect them to the DOM elements within the return statement.
+  // Initialise with null value as we don't have a value yet but will do later.
+  // The related type of useRef() is the type of value that will eventually be managed by useRef.
+  const goal = useRef<HTMLInputElement>(null);
+  const summary = useRef<HTMLInputElement>(null);
+
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    // Use FormDate object to extract the input values of our form.
-    // new FormData(event.currentTarget);
+    // I'm sure that this current goal value will never become null as in the DOM (JSX) the ref prop, we have set it to `goal` object.
+    // To let TS know this we add the exclamation mark after the potentially null value.
+    const enteredGoal = goal.current!.value;
+    const enteredSummary = summary.current!.value;
   }
   // `handleSubmit` value passed into onSubmit prop is connected to the nested `handleSubmit` func above.
   return (
     <form onSubmit={handleSubmit}>
       <p>
         <label htmlFor='goal'>Your Goal</label>
-        <input id='goal' type='text' name='goal' />
+        <input id='goal' type='text' name='goal' ref={goal} />
       </p>
       <p>
         <label htmlFor='summary'>Short Summary</label>
-        <input id='summary' type='text' />
+        <input id='summary' type='text' ref={summary} />
       </p>
-      {/* btn will by default submit form and trigger the submit event of form. 
-      We can handle that by adding the `onSubmit` prop to form opening tag above. */}
       <p>
         <button>Add Goal</button>
       </p>
