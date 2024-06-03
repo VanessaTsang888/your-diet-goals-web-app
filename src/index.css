@@ -90,7 +90,8 @@ ul {
 }
 
 li {
-  background-color: #475357;
+  /* background-color: #475357; */
+  background-color: #486b4e;
   padding: 1rem;
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -119,7 +120,7 @@ li button {
   padding: 0 0.5rem;
   background: transparent;
   border: none;
-  color: #909a9a;
+  color: #fff;
   cursor: pointer;
 }
 
