@@ -6,14 +6,17 @@ import { type FormEvent } from 'react';
 // Set `FormEvent` type on the event object param that is provided by React for type safety.
 
 export default function NewGoal() {
-  function handleSubmit(event: FormEvent) {
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    // Use FormDate object to extract the input values of our form.
+    // new FormData(event.currentTarget);
   }
+  // `handleSubmit` value passed into onSubmit prop is connected to the nested `handleSubmit` func above.
   return (
     <form onSubmit={handleSubmit}>
       <p>
         <label htmlFor='goal'>Your Goal</label>
-        <input id='goal' type='text' />
+        <input id='goal' type='text' name='goal' />
       </p>
       <p>
         <label htmlFor='summary'>Short Summary</label>
