@@ -20,12 +20,12 @@ export default function App() {
   // logic for manipulating empty Array inside useState([]) func with the help of `setGoals`.
   // Spread the existing goal array into new goal array - copy all elements of existing array into new array.
   // Then add new object at the end of the shape of `Diet Goal` type.
-  function handleAddGoal() {
+  function handleAddGoal(goal: string, summary: string) {
     setGoals((prevGoals) => {
       const newGoal: DietGoal = {
         id: Math.random(), // generate a random number
-        title: 'Set and manage your diet goals on the move',
-        description: 'Loose weight faster',
+        title: goal,
+        description: summary,
       };
       // At the end of this new state snapshot, so that `newGoal` array that we setting up here. Then we can use `goals` element to dynamically output below list of DietGoal components.
       return [...prevGoals, newGoal];
@@ -43,7 +43,7 @@ export default function App() {
       <Header image={{ src: goalsImg, alt: 'A list of goals' }}>
         <h1>Your Diet Goals</h1>
       </Header>
-      <NewGoal />
+      <NewGoal onAddGoal={handleAddGoal} />
       <DietGoalList goals={goals} onDeleteGoal={handleDeleteGoal} />
     </main>
   );
