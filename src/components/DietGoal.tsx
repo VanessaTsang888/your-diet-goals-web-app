@@ -27,7 +27,7 @@ export default function DietGoal({
         <h2>{title}</h2>
         {children}
       </div>
-      {/* Inside of this anonymus func, manually invoke the onDelete() func that has id parman passed into it. */}
+      {/* Handle clicks on that delete button. Inside of this anonymus func, manually invoke the onDelete() func that has id parameter passed into it. */}
       <button onClick={() => onDelete(id)}>Delete</button>
     </article>
   );

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import DietGoalList from './components/DietGoalList.tsx';
 import Header from './components/Header.tsx';
 import goalsImg from './assets/goals.jpg';
+import NewGoal from './components/NewGoal.tsx';
 
 // Define our type for `DietGoal`
 export type DietGoal = {
@@ -42,7 +43,7 @@ export default function App() {
       <Header image={{ src: goalsImg, alt: 'A list of goals' }}>
         <h1>Your Diet Goals</h1>
       </Header>
-      <button onClick={handleAddGoal}>Add Goal</button>
+      <NewGoal />
       <DietGoalList goals={goals} onDeleteGoal={handleDeleteGoal} />
     </main>
   );
