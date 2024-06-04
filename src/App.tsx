@@ -40,7 +40,12 @@ export default function App() {
 
   return (
     <main>
-      <Header image={{ src: goalsImg, alt: 'A list of goals' }}>
+      <Header
+        image={{
+          src: goalsImg,
+          alt: 'logo for Your Diet Goals management website application',
+        }}
+      >
         <h1>Your Diet Goals</h1>
       </Header>
       <NewGoal onAddGoal={handleAddGoal} />
