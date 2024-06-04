@@ -12,8 +12,7 @@ type DietGoalProps = PropsWithChildren<{
 
 /* Define the type for React `props` parameter.
 Connect - up from the `title` and `description` from the return statement to the props parameters.
-Use the `DietGoalProps` as a type for the Props object since its already defined above.
-*/
+Use the `DietGoalProps` as a type for the Props object since its already defined above. */
 export default function DietGoal({
   title,
   id,

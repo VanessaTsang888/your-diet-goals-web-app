@@ -4,7 +4,6 @@ import DietGoal from './DietGoal.tsx';
 // Then in the DietGoalKistProps -> goals prop, we make it clear its an Array of CGoal values.
 import { type DietGoal as CGoal } from '..App.tsx';
 
-// A set of empty Array at the end as its an Array of objects, not a single object.
 // The type for goals prop is we make it clear that its an Array of `CGals` values which is defined in the DietGoal type inside of App component.
 // OnDelete prop has func type where we expect to get one parameter.
 type DietGoalListProps = {
@@ -12,10 +11,6 @@ type DietGoalListProps = {
   onDeleteGoal: (id: number) => void;
 };
 
-// Use destructuring to get hold of `goals`.
-// Pass a func to map where we get our individual goal and return the element we want to output for eery goal which is a list item and inside that is our DietGoal component.
-// Extract onDelete from props object.
-// Pass onDelete prop to DietGoal component and forward our onDelete.
 // Make the id prop with `goal.id` available inside of DietGoal component.
 export default function DietGoalList({
   goals,
