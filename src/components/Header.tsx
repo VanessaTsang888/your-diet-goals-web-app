@@ -10,15 +10,16 @@ type HeaderProps = {
   };
   children: ReactNode;
 };
-// Use object destructuring to pull out the image and children props.
-// Set src attribute to image.src, and the alt attribute to image.alt
 // Distribute the image object (spread them as key-value-pairs) which contains
 // the source and alt properties on to the image tag.
+// React accessibility: title attribute - tooltip for users with reduced vision
 export default function Header({ image, children }: HeaderProps) {
   return (
     <header>
-      <img {...image} />
-      {/* <img src={image.src} alt={image.alt} /> */}
+      <img
+        {...image}
+        title='logo for Your Diet Goals management website application'
+      />
       {children}
     </header>
   );
