@@ -2,7 +2,7 @@
 import DietGoal from './DietGoal.tsx';
 // To solve the name clash problem, assign an alias to that import. We give the imported type a differnt name - DGoal.
 // Then in the DietGoalKistProps -> goals prop, we make it clear its an Array of CGoal values.
-import { type DietGoal as CGoal } from '..App.tsx';
+import { type DietGoal as CGoal } from '../App.tsx';
 
 // The type for goals prop is we make it clear that its an Array of `CGals` values which is defined in the DietGoal type inside of App component.
 // OnDelete prop has func type where we expect to get one parameter.
