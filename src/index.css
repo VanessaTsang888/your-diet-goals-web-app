@@ -132,3 +132,9 @@ li button:hover {
   text-align: center;
   color: #acd1ce;
 }
+
+/* Accessibility: logo image should be focusable using the keyboard */
+img:focus {
+  outline: 3px solid#f9a73b;
+  border-radius: 3px;
+}
