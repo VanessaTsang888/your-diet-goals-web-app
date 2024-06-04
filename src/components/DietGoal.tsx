@@ -23,10 +23,10 @@ export default function DietGoal({
   // React accessibility: use React Frangment (semanic react tag) rather than div element which is not a semanic html tag
   return (
     <article>
-      <>
+      <div>
         <h2>{title}</h2>
         {children}
-      </>
+      </div>
       {/* Handle clicks on that delete button. Inside of this anonymus func, manually invoke the onDelete() func that has id parameter passed into it. */}
       <button onClick={() => onDelete(id)}>Delete</button>
     </article>
