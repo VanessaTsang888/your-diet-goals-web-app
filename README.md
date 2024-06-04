@@ -52,3 +52,16 @@ tsconfig.json                  # Configure the TS compiler
 tsconfig.node.json             # Configure the TS Node compiler
 vite.config.ts                 # Vite tool configurations to convert code to JavaScript syntax
 ```
+
+## React Accessibility
+
+1. Used React Fragment tag instead of div element as it is more semanic markup syntax.
+2. Used the alt attribute to improve accessibility for assistive technology such as screen readers and keyboard navigation to enable alternative ways of viewing and navigating a page.
+3. Used title attribute as a tool tip for logo image can help users with reduced vision problem.
+4. Keybord focus feature so that users with disabilities know when a new component renders.
+
+## Cybersecurity
+
+To minimise cyber threats to our web application, we can use various tools such as [snyk - find and fix vulnerabilities in 5 minuetes](https://snyk.io/) or [GitHub Dependabot - Automated dependency updates built into GitHub](https://github.com/dependabot).
+
+I am using [GitHub Dependabot - Automated dependency updates built into GitHub](https://github.com/dependabot) on my [Your Diet Goals web application repository](https://github.com/VanessaTsang888/your-diet-goals-web-app) to monitor the dependencies so I get alerted when there are vulnabilities inside them. I have been through the Settings for the 'Code security and analysis' section and have Enabled some of the features.
