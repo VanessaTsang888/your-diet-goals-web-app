@@ -27,15 +27,28 @@ export default function NewGoal({ onAddGoal }: NewGoalProps) {
     onAddGoal(enteredGoal, enteredSummary);
   }
   // `handleSubmit` value passed into onSubmit prop is connected to the nested `handleSubmit` func above.
+  // `aria-required` attributes: inputs must have a value. Ensures users navigating with the aid of assistive technologies understand which semantic form controls need valid content.
   return (
     <form onSubmit={handleSubmit}>
       <p>
         <label htmlFor='goal'>Your Goal</label>
-        <input id='goal' type='text' name='goal' ref={goal} />
+        <input
+          id='goal'
+          type='text'
+          name='goal'
+          ref={goal}
+          aria-required='true'
+        />
       </p>
       <p>
         <label htmlFor='summary'>Short Summary</label>
-        <input id='summary' type='text' ref={summary} />
+        <input
+          id='summary'
+          type='text'
+          name='summary'
+          ref={summary}
+          aria-required='true'
+        />
       </p>
       <p>
         <button>Add Goal</button>
