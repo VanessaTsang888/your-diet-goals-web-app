@@ -19,7 +19,7 @@ CSS - Cascading Style Sheets
 TypeScript - serves as a superset of JavaScript, offering optional static type-checking along with the latest ECMAScript features.
 React.js - to build high-performing Single-Page Applications (SPA) using maintainable components.
 
-# Requirements
+## Requirements
 
 - [Node.js](https://nodejs.org/)
 - [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
@@ -65,3 +65,8 @@ vite.config.ts                 # Vite tool configurations to convert code to Jav
 To minimise cyber threats to our web application, we can use various tools such as [snyk - find and fix vulnerabilities in 5 minuetes](https://snyk.io/) or [GitHub Dependabot - Automated dependency updates built into GitHub](https://github.com/dependabot).
 
 I am using [GitHub Dependabot - Automated dependency updates built into GitHub](https://github.com/dependabot) on my [Your Diet Goals web application repository](https://github.com/VanessaTsang888/your-diet-goals-web-app) to monitor the dependencies so I get alerted when there are vulnabilities inside them. I have been through the Settings for the 'Code security and analysis' section and have Enabled some of the features.
+
+### Published Live
+
+I have completed and deployed this web application on the world wide web or wwww.
+[Use the Your Diet Goals website application to set and manage your diet goal](https://leafy-frangipane-852a66.netlify.app/)
