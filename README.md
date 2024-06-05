@@ -26,10 +26,12 @@ React.js - to build high-performing Single-Page Applications (SPA) using maintai
 
 ## Getting started
 
-- `git clone` the repository
-- Navigate to the directory
-- Run `npm i` to install node modules
-- `npm run dev` to start the development server to run app locally. Open browser and in the URL type: http://localhost:5173/
+- `git clone` # clone down the repository from GitHub.
+- Navigate to the directory or project on your local drive.
+- Run `npm i` # to install node modules.
+- `npm run dev` # to start the development server and run app locally.
+- Open a browser window and click on the URL: `http://localhost:5173/` that appears in your terminal.
+- `npm run build` # to build the app for deployment and go live.
 
 ## Structure
 
@@ -68,5 +70,5 @@ I am using [GitHub Dependabot - Automated dependency updates built into GitHub](
 
 ### Published Live
 
-I have completed and deployed this web application on the world wide web or wwww.
-[Use the Your Diet Goals website application to set and manage your diet goal](https://leafy-frangipane-852a66.netlify.app/)
+I have completed and deployed this simple, interactive and responsive web application on the World Wide Web or wwww.
+Now users can use the [Your Diet Goals website application](https://leafy-frangipane-852a66.netlify.app/) to set and manage your diet goal on the move which will support them with improving their health and wellbeing.
