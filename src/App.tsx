@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import DietGoalList from './components/DietGoalList.tsx';
 import Header from './components/Header.tsx';
-import goalsImg from './assets/goals.jpg';
 import NewGoal from './components/NewGoal.tsx';
 
 // Define our type for `DietGoal`
@@ -40,12 +39,7 @@ export default function App() {
 
   return (
     <main>
-      <Header
-        image={{
-          src: goalsImg,
-          alt: 'logo for Your Diet Goals management website application',
-        }}
-      >
+      <Header>
         <h1>Your Diet Goals</h1>
       </Header>
       <NewGoal onAddGoal={handleAddGoal} />
