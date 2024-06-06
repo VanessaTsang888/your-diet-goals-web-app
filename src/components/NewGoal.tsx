@@ -37,6 +37,7 @@ export default function NewGoal({ onAddGoal }: NewGoalProps) {
           type='text'
           name='goal'
           ref={goal}
+          required
           aria-required='true'
         />
       </p>
@@ -47,6 +48,7 @@ export default function NewGoal({ onAddGoal }: NewGoalProps) {
           type='text'
           name='summary'
           ref={summary}
+          required
           aria-required='true'
         />
       </p>
