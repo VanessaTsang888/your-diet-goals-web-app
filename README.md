@@ -35,24 +35,24 @@ React.js - to build high-performing Single-Page Applications (SPA) using maintai
 
 ## Structure
 
-```
+```mdx
 src
-  └── App.tsx                  # App entry point
-  └── assets                   # Static files like CSS, JS and fonts
-        └── goals.jpg          # small full colour compress image
-  └── components               # independent and reusable bits of code
-        └── CourseGoal.tsx     # Application logic - maintainable React components
-  └── index.css                # Styles and layout of the application
-  └── main.tsx                 # Templates for the app user interface
-  └── vite-env.d.ts            # Vite build tool environment - vite build tools
-index.html                     # Overall content of the application
-package.json                   # Project dependencies
-public                         # Directory for static files such as logo files
-  └── goals.jpg                # Project logo file
-README.md                      # Project README file
-tsconfig.json                  # Configure the TS compiler
-tsconfig.node.json             # Configure the TS Node compiler
-vite.config.ts                 # Vite tool configurations to convert code to JavaScript syntax
+└── App.tsx # App entry point
+└── assets # Static files like CSS, JS and fonts
+└── goals.jpg # small full colour compress image
+└── components # independent and reusable bits of code
+└── CourseGoal.tsx # Application logic - maintainable React components
+└── index.css # Styles and layout of the application
+└── main.tsx # Templates for the app user interface
+└── vite-env.d.ts # Vite build tool environment - vite build tools
+index.html # Overall content of the application
+package.json # Project dependencies
+public # Directory for static files such as logo files
+└── goals.jpg # Project logo file
+README.md # Project README file
+tsconfig.json # Configure the TS compiler
+tsconfig.node.json # Configure the TS Node compiler
+vite.config.ts # Vite tool configurations to convert code to JavaScript syntax
 ```
 
 ## React Accessibility
