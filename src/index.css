@@ -29,7 +29,8 @@
   font-size: 3rem;
   color: #dfd9be;
   line-height: 0.2rem;
-  margin-top: 1rem;
+  transform: translateY(1.4rem);
+  /* margin-top: 1rem; */
 }
 
 .material-symbols-rounded {
@@ -37,8 +38,13 @@
   font-size: 3rem;
   color: #dfd9be;
   line-height: 0.2rem;
-  margin-top: 1rem;
+  transform: translateY(1.4rem);
 }
+/* Accessibility: icons should be focusable using the keyboard */
+/* .material-icons .material-symbols-rounded:focus i {
+  outline: 3px solid#f9a73b;
+  border-radius: 3px;
+} */
 
 .icon-container {
   display: flex;
@@ -67,7 +73,6 @@ main {
   max-width: 40rem;
   margin: 3rem auto;
   padding: 2rem;
-  /* background-color: #3a4346; */
   background-color: #486b4e;
   color: #f0f6f8;
   border-radius: 6px;
@@ -92,19 +97,19 @@ header h1 {
   margin-bottom: 0rem;
   text-align: center;
   letter-spacing: 0.5rem;
-  /* line-height: 0.08rem; */
   color: #f7e596;
   letter-spacing: 0.08rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0rem;
 }
 
 p {
   font-size: 1rem;
   line-height: normal;
-  margin-top: 0rem;
-  margin-bottom: 1.5rem;
+  transform: translateY(-2rem);
   color: #dfd9be;
+}
+
+form {
+  transform: translateY(-0.7rem);
 }
 
 label {
@@ -154,7 +159,6 @@ ul {
 }
 
 li {
-  /* background-color: #475357; */
   background-color: #486b4e;
   padding: 1rem;
   border-radius: 4px;
@@ -197,8 +201,8 @@ li button:hover {
   color: #acd1ce;
 }
 
-/* Accessibility: logo image should be focusable using the keyboard */
+/* Accessibility: logo image should be focusable using the keyboard
 img:focus {
   outline: 3px solid#f9a73b;
   border-radius: 3px;
-}
+} */
