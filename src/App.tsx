@@ -41,6 +41,7 @@ export default function App() {
     <main>
       <Header>
         <h1>Your Diet Goals</h1>
+        <p>Set and manage your diet goals on the move</p>
       </Header>
       <NewGoal onAddGoal={handleAddGoal} />
       <DietGoalList goals={goals} onDeleteGoal={handleDeleteGoal} />

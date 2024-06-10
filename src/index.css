@@ -85,10 +85,17 @@ img {
 }
 
 header h1 {
-  margin: 0;
-  font-size: 1.75rem;
+  margin: 0%;
+  line-height: 0.08rem;
   color: #f7e596;
   letter-spacing: 0.08rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1rem;
+  margin-bottom: 0.8rem;
+  color: #dfd9be;
 }
 
 label {
