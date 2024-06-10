@@ -28,12 +28,16 @@
 .material-icons {
   font-size: 3rem;
   color: #dfd9be;
+  line-height: 0.2rem;
+  margin-top: 1rem;
 }
 
 .material-symbols-rounded {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
   font-size: 3rem;
   color: #dfd9be;
+  line-height: 0.2rem;
+  margin-top: 1rem;
 }
 
 .icon-container {
@@ -85,16 +89,21 @@ img {
 }
 
 header h1 {
-  margin: 0%;
-  line-height: 0.08rem;
+  margin-bottom: 0rem;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  /* line-height: 0.08rem; */
   color: #f7e596;
   letter-spacing: 0.08rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0rem;
 }
 
 p {
   font-size: 1rem;
-  line-height: 1rem;
-  margin-bottom: 0.8rem;
+  line-height: normal;
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
   color: #dfd9be;
 }
 
