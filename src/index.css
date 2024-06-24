@@ -104,13 +104,13 @@ header h1 {
 p {
   font-size: 1rem;
   line-height: normal;
-  transform: translateY(-2rem);
+  /* transform: translateY(-2rem); */
   color: #dfd9be;
 }
 
-form {
+/* form {
   transform: translateY(-0.7rem);
-}
+} */
 
 label {
   display: block;
@@ -201,8 +201,3 @@ li button:hover {
   color: #acd1ce;
 }
 
-/* Accessibility: logo image should be focusable using the keyboard
-img:focus {
-  outline: 3px solid#f9a73b;
-  border-radius: 3px;
-} */
