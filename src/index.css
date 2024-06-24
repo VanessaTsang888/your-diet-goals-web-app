@@ -30,7 +30,6 @@
   color: #dfd9be;
   line-height: 0.2rem;
   transform: translateY(1.4rem);
-  /* margin-top: 1rem; */
 }
 
 .material-symbols-rounded {
@@ -40,11 +39,6 @@
   line-height: 0.2rem;
   transform: translateY(1.4rem);
 }
-/* Accessibility: icons should be focusable using the keyboard */
-/* .material-icons .material-symbols-rounded:focus i {
-  outline: 3px solid#f9a73b;
-  border-radius: 3px;
-} */
 
 .icon-container {
   display: flex;
@@ -104,13 +98,8 @@ header h1 {
 p {
   font-size: 1rem;
   line-height: normal;
-  /* transform: translateY(-2rem); */
   color: #dfd9be;
 }
-
-/* form {
-  transform: translateY(-0.7rem);
-} */
 
 label {
   display: block;
