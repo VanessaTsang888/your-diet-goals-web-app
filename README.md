@@ -62,13 +62,13 @@ vite.config.ts # Vite tool configurations to convert code to JavaScript syntax
 3. Used title attribute as a tool tip for logo image can help users with reduced vision problem.
 4. Keybord focus feature so that users with disabilities know when a new component renders.
 
-## Cybersecurity
+## Cybersecurity - Defensive Programming
 
 To minimise cyber threats to our web application, we can use various tools such as [snyk - find and fix vulnerabilities in 5 minuetes](https://snyk.io/) or [GitHub Dependabot - Automated dependency updates built into GitHub](https://github.com/dependabot).
 
 I am using [GitHub Dependabot - Automated dependency updates built into GitHub](https://github.com/dependabot) on my [Your Diet Goals web application repository](https://github.com/VanessaTsang888/your-diet-goals-web-app) to monitor the dependencies so I get alerted when there are vulnabilities inside them. I have been through the Settings for the 'Code security and analysis' section and have Enabled some of the features.
 
-### Published Live
+### Deployed React.js Website
 
 I have completed and deployed this simple, interactive and responsive web application on the World Wide Web or wwww.
-Now users can use the [Your Diet Goals website application](https://leafy-frangipane-852a66.netlify.app/) to set and manage your diet goal on the move which will support them with improving their health and wellbeing.
+Now users can use my [Your Diet Goals website application](https://your-diet-goals.netlify.app/) to set and manage their diet goal on the move which will support them with improving their health and wellbeing.
