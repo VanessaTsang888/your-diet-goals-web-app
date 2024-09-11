@@ -2,12 +2,14 @@
 
 With this responsive website application, users can set and manage thier diet goals on the move via their mobile smart devices. Once you have added a goal, you can delete it when you have completed that goal.
 
-This web app uses the essential concepts for React App with TypeScript:
+This web app uses the essential concepts for React App with TypeScript and also advanced components Types - Dynamic Components:
 
 - Components, Props and TypeScript
 - Handling Events
 - Working with State
-- Handling Input via Forms and Refs.
+- Handling Input via Forms and Refs
+- Building a More Dynamic and flexible component
+- Building components with Discriminated Unions.
 
 ## The tech stack
 
