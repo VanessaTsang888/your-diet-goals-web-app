@@ -1,54 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 16rem; /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-
-.material-icons {
-  font-size: 3rem;
-  color: #dfd9be;
-  line-height: 0.2rem;
-  transform: translateY(1.4rem);
-}
-
-.material-symbols-rounded {
-  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
-  font-size: 3rem;
-  color: #dfd9be;
-  line-height: 0.2rem;
-  transform: translateY(1.4rem);
-}
-
-.icon-container {
-  display: flex;
-}
-
-.icon-container span + span {
-  width: 33%;
-  margin-left: 0.1rem;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -67,7 +18,7 @@ main {
   max-width: 40rem;
   margin: 3rem auto;
   padding: 2rem;
-  background-color: #486b4e;
+  background-color: #3a4346;
   color: #f0f6f8;
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -88,17 +39,9 @@ img {
 }
 
 header h1 {
-  margin-bottom: 0rem;
-  text-align: center;
-  letter-spacing: 0.5rem;
+  margin: 0;
+  font-size: 1.75rem;
   color: #f7e596;
-  letter-spacing: 0.08rem;
-}
-
-p {
-  font-size: 1rem;
-  line-height: normal;
-  color: #dfd9be;
 }
 
 label {
@@ -107,8 +50,6 @@ label {
   font-weight: bold;
   text-transform: uppercase;
   color: #dfd9be;
-  letter-spacing: 0.1rem;
-  margin-bottom: 0.2rem;
 }
 
 input {
@@ -148,7 +89,7 @@ ul {
 }
 
 li {
-  background-color: #486b4e;
+  background-color: #475357;
   padding: 1rem;
   border-radius: 4px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -177,7 +118,7 @@ li button {
   padding: 0 0.5rem;
   background: transparent;
   border: none;
-  color: #fff;
+  color: #909a9a;
   cursor: pointer;
 }
 
@@ -185,8 +126,31 @@ li button:hover {
   color: #f9a73b;
 }
 
-.fallback {
+.infobox {
+  margin: 2rem 0;
+  padding: 0.5rem;
   text-align: center;
-  color: #acd1ce;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  font-size: 0.85rem;
+  border-radius: 4px;
 }
 
+.infobox-hint {
+  border: 1px solid #96f5f7;
+  color: #96f5f7;
+}
+
+.infobox-warning.warning--low {
+  border: 1px solid #f6d84f;
+  color: #f6d84f;
+}
+
+.infobox-warning.warning--medium {
+  border: 1px solid #f9a73b;
+  color: #f9a73b;
+}
+
+.infobox-warning.warning--high {
+  border: 1px solid #f97373;
+  color: #f97373;
+}
