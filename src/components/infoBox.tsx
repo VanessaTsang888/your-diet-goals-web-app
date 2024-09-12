@@ -1,20 +1,30 @@
-// Import the type ReactNode from react so we can type our children prop with it.
+// Use Discriminated Union to build flexible component that accepts different modes that
+// also conditionally requires an additional Prop for one of the two modes.
+// Allows us to build way more flexible components and in general TS allows us to write more flexible code.
 import { type ReactNode } from 'react';
 
-// InfoBox props type contains two props and they are both typed using TS.
-// Use a Union type featue and the literal type feature since the mode needs to be flexible: hint or warning mode.
-// children prop must be typed as `ReactNode` and must be imported from 'react' at the top of this component file.
-type InfoBoxProps = {
-  mode: 'hint' | 'warning';
+// Discriminated Union: two type definitions. Two Props objects.
+// Display this box in `hint` mode
+type HintBoxProps = {
+  mode: 'hint';
   children: ReactNode;
 };
 
+// Display this box in 'warning' mode
+type WarningBoxProps = {
+  mode: 'warning';
+  severity: 'low' | 'medium' | 'high';
+  children: ReactNode;
+};
+
+// Third type - the Union of HintBoxProps or WarningBoxProps.
+// Allowing both Props objects but they have different properties depending on the mode that was chosen.
+type InfoBoxProps = HintBoxProps | WarningBoxProps;
+
 // Define and export our `info` box func. We offer 2 versions of infoBox, either `hint` or `warning`.
-// Output/display infoBox feature as hint mode.
-// Use object destructuring to pull-out the mode and children props.
-// Check ff mode is the same as 'hint'. If so, display the `children` object. Otherwise display the `children` from the second return statement.
-// Set different css classes depending on the mode is 'hint' or 'warning'.
-export default function InfoBox({ mode, children }: InfoBoxProps) {
+export default function InfoBox(props: InfoBoxProps) {
+  const { children, mode } = props;
+
   if (mode === 'hint') {
     return (
       <aside className='infobox infobox-hint'>
@@ -23,9 +33,14 @@ export default function InfoBox({ mode, children }: InfoBoxProps) {
     );
   }
 
+  // Now we've made it pass the above `if` check the mode can't be `hint` so must be warning.
+  // Destructure `severity` from `props`. Execute this is the mode is not set to `hint`.
+  //  So now we have a severity prop.
+  const { severity } = props;
+
   // Output/display infoBox feature as warning mode.
   return (
-    <aside className='infobox infobox-warning warning--medium'>
+    <aside className={`infobox infobox-warning warning--${severity}`}>
       <h2>Warning</h2>
       <p>{children}</p>
     </aside>

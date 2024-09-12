@@ -1,8 +1,6 @@
 import { type ReactNode } from 'react';
 // Import DietGoal component as we will use it down in the return statement - JSX syntax.
 import DietGoal from './DietGoal.tsx';
-// To solve the name clash problem, assign an alias to that import. We give the imported type a differnt name - DGoal.
-// Then in the DietGoalKistProps -> goals prop, we make it clear its an Array of CGoal values.
 import { type DietGoal as CGoal } from '../App.tsx';
 import InfoBox from './infoBox.tsx';
 
@@ -30,9 +28,10 @@ export default function DietGoalList({
   let warningBox: ReactNode;
 
   // Override above default value if user set too many goals with this if statement check.
+  // Set `severity` prop on InfoBox component as it is required here
   if (goals.length >= 4) {
     warningBox = (
-      <InfoBox mode='warning'>
+      <InfoBox mode='warning' severity='high'>
         You've set a lot of goals. Don't over work yourself!
       </InfoBox>
     );
