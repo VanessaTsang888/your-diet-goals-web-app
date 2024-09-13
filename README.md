@@ -2,23 +2,23 @@
 
 With this responsive website application, users can set and manage thier diet goals on the move via their mobile smart devices. Once you have added a goal, you can delete it when you have completed that goal.
 
-This web app uses the essential concepts for React App with TypeScript and also advanced components Types - Dynamic Components:
+This web app uses the essential concepts for React App with TypeScript. Also advanced components Types - Dynamic and flexible Components:
 
 - Components, Props and TypeScript
 - Handling Events
 - Working with State
 - Handling Input via Forms and Refs
 - Building a More Dynamic and flexible component
-- Building components with Discriminated Unions.
+- Building components with Discriminated Unions (TypeScript Pattern).
 
 ## The tech stack
 
-This React App with TypeScript is built with Vite build tool.
+This React App with TypeScript (static type checking, catch type-related errors at compile-time) is built with Vite build tool.
 
 Vite - a build tool to provide a faster and leaner development experience for modern web projects.
 Node.js - runtime environment that executes JavaScript on the server side.
 CSS - Cascading Style Sheets
-TypeScript - serves as a superset of JavaScript, offering optional static type-checking along with the latest ECMAScript features.
+TypeScript - makes my code more reliable and maintainable.
 React.js - to build high-performing Single-Page Applications (SPA) using maintainable components.
 
 ## Requirements
